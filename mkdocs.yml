@@ -1,0 +1,57 @@
+# ==========================================
+# 1. SITE INFORMATION
+# ==========================================
+site_name: Wiki Street Medic Marseille
+site_description: Documentation street medic
+site_url: https://streetmedicmarseille.org
+
+# ==========================================
+# 2. THEME
+# ==========================================
+theme:
+  name: material
+  # Fonts
+  font:
+    text: Inter
+    code: IBM Plex Mono
+  icon:
+    admonition:
+      description: material/eye
+      protection: material/shield-check
+      injury: material/heart-pulse
+
+  # Light / dark modes
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+
+  # Navigation features
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - pymdownx.blocks.caption
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
