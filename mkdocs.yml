@@ -46,6 +46,7 @@ theme:
     - navigation.path
     - search.suggest
     - search.highlight
+    - navigation.footer
 markdown_extensions:
   - pymdownx.blocks.caption
   - md_in_html
@@ -55,3 +56,41 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+# ==========================================
+#  NAVIGATION
+# ==========================================
+nav:
+  - Accueil: index.md
+  - Risques:
+      - Risques\index.md
+      - Les Unités:
+        - Risques\Les_Unités\Renseignements_Généraux\index.md
+        - Risques\Les_Unités\Compagnies_Républicaines_de_Sécurité\index.md
+        - Risques\Les_Unités\Brigades_Anti_Criminalité\index.md
+        - Risques\Les_Unités\RAID\index.md
+        - Risques\Les_Unités\GIGN\index.md
+      - Armes de contact:
+        - Risques\Armes_De_Contact\Matraque_Télescopique\index.md
+        - Risques\Armes_De_Contact\Tonfa\index.md
+        - Risques\Armes_De_Contact\Bâton_Souple\index.md
+        - Risques\Armes_De_Contact\Gazeuse\index.md
+        - Risques\Armes_De_Contact\Bouclier_Anti_Emeute\index.md
+      - Munitions:
+        - Risques\Munitions\Balle_De_Gomme\index.md
+        - Risques\Munitions\Grenade_Lacrymogène\index.md
+        - Risques\Munitions\GENL\index.md
+        - Risques\Munitions\GM2L\index.md
+      - Lanceurs:
+        - Risques\Lanceurs\La_Main\index.md
+        - Risques\Lanceurs\Cougar\index.md
+        - Risques\Lanceurs\LBD_40\index.md
+        - Risques\Lanceurs\Flashball_Super_Pro_2\index.md
+        - Risques\Lanceurs\Multi_Coup\index.md
+      - Véhicules:
+        - Risques\Véhicules\Kerax\index.md
+        - Risques\Véhicules\Vid_MF\index.md
+        - Risques\Véhicules\Black_Wolf\index.md
+        - Risques\Véhicules\Centaure\index.md
+        - Risques\Véhicules\VRBG\index.md
+
