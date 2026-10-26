@@ -1,0 +1,88 @@
+/*----------------------------------------------------- 
+----------------Admonitions---------------------------- 
+-------------------------------------------------------*/
+:root {
+  --md-admonition-icon--description: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23000' d='M12 2 1 21h22L12 2zm0 5 1 8h-2l1-8zm0 11a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4'/></svg>");
+  --md-admonition-icon--protection: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23000' d='M12 1 3 5v6c0 5.5 3.8 10 9 12 5.2-2 9-6.5 9-12V5l-9-4zm-1 15-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z'/></svg>");
+  --md-admonition-icon--injury: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23000' d='M12 21.4 10.6 20C5.4 15.3 2 12.2 2 8.5 2 5.5 4.4 3 7.5 3c1.7 0 3.4.8 4.5 2.1C13.1 3.8 14.8 3 16.5 3 19.6 3 22 5.5 22 8.5c0 3.7-3.4 6.8-8.6 11.5L12 21.4z'/></svg>");
+}
+
+/* Shared layout */
+.md-typeset .admonition.description,
+.md-typeset .admonition.protection,
+.md-typeset .admonition.injury {
+  border-left-width: 4px;
+}
+
+/* Description: red */
+.md-typeset .admonition.description {
+  border-color: #D32F2F;
+}
+.md-typeset .description > .admonition-title {
+  background-color: #D32F2F1A;
+}
+.md-typeset .description > .admonition-title::before {
+  background-color: #D32F2F;
+  mask-image: var(--md-admonition-icon--description);
+  -webkit-mask-image: var(--md-admonition-icon--description);
+}
+
+/* Protection: yellow */
+.md-typeset .admonition.protection {
+  border-color: #B8860B;
+}
+.md-typeset .protection > .admonition-title {
+  background-color: #B8860B1A;
+}
+.md-typeset .protection > .admonition-title::before {
+  background-color: #B8860B;
+  mask-image: var(--md-admonition-icon--protection);
+  -webkit-mask-image: var(--md-admonition-icon--protection);
+}
+
+/* Injury: pink */
+.md-typeset .admonition.injury {
+  border-color: #ed5f98;
+}
+.md-typeset .injury > .admonition-title {
+  background-color: #C2185B1A;
+}
+.md-typeset .injury > .admonition-title::before {
+  background-color: #ed5f98;
+  mask-image: var(--md-admonition-icon--injury);
+  -webkit-mask-image: var(--md-admonition-icon--injury);
+}
+
+/*----------------------------------------------------- 
+----------------Thumbnails images---------------------- 
+-------------------------------------------------------*/
+.md-typeset figure.thumb {
+  display: block;
+  float: right;
+  width: 200px;
+  max-width: 30%;
+  margin: 0 0 1rem 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  font-size: 0.8rem;
+  text-align: left;
+}
+.md-typeset figure.thumb img {
+  width: 100%;
+  height: auto;
+}
+.md-typeset figure.thumb figcaption {
+  margin-top: 0.4rem;
+}
+.md-typeset h1, .md-typeset h2 {
+  clear: right;
+}
+@media (max-width: 600px) {
+  .md-typeset figure.thumb {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
