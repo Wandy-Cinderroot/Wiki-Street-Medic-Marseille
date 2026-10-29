@@ -1,0 +1,7 @@
+_genere/
+site/
+.cache/
+.venv/
+__pycache__/
+.obsidian/workspace*.json
+.DS_Store

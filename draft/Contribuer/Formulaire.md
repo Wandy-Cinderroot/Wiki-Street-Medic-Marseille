@@ -1,0 +1,11 @@
+- Risques
+	- Armes De Contact
+		- résumé
+			- description : 
+				- type: texte 200 caractères maximum
+				- explication: Faite une brève description de l'arme, de son fonctionnement et/ou de ses effets en 200 caractères maximum.
+			- type de blessure : texte 200 caractères maximum
+				- type: texte 200 caractères maximum
+				- explication: Faite une liste des types de blessure en 200 caractères maximum.
+			- se protéger : texte 200 caractères maximum
+		- 

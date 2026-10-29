@@ -1,6 +1,6 @@
 name: "Proposer un nouvel article: Risques -> Armes De Contact"
 description: Suggérer une fiche qui n'existe pas encore (arme, véhicule, blessure, soin, équipement...)
-title: "[new]"
+title: "[new] "
 labels: ["new-article", "to-review"]
 body:
   - type: markdown

@@ -1,0 +1,86 @@
+name: Proposer un nouvel article
+description: Suggérer une fiche qui n'existe pas encore (arme, véhicule, blessure, soin, équipement...)
+title: "[new] "
+labels: ["new-article", "to-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de contribuer. Ce formulaire est public: n'indiquez aucune donnée personnelle (noms, lieux sensibles, contacts). Utilisez un pseudonyme si vous le souhaitez.
+        Avant de proposer, vérifiez avec la recherche du site que la fiche n'existe pas déjà.
+  - type: dropdown
+    id: article-type
+    attributes:
+      label: Type de fiche
+      options:
+        - weapon-contact
+        - munition
+        - launcher
+        - tactical
+        - vehicle
+        - unit
+        - injury
+        - care
+        - ppe
+        - other
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Titre de la fiche
+      description: Nom lisible, en français, sans article.
+      placeholder: Grenade lacrymogène
+    validations:
+      required: true
+  - type: input
+    id: filename
+    attributes:
+      label: Nom de fichier proposé
+      description: Minuscules, sans accent ni espace, mots séparés par des tirets, singulier. Le dossier et le fichier portent ce nom.
+      placeholder: grenade-lacrymogene
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Résumé en 3 lignes
+      description: Ce que c'est, ce que ça fait, blessures typiques.
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Contenu
+      description: Écrivez ce que vous savez, même incomplet. Reconnaître, fonctionnement, usage légal, usage observé, blessures, protection, soins. Le Markdown est accepté.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Liens, titres, dates de consultation. Pour tout contenu médical, citez un référentiel de premiers secours officiel.
+      placeholder: "- Nom de la source, lien, consulté le AAAA-MM-JJ"
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Fiches liées
+      description: Armes, blessures, équipements ou soins en rapport (noms de fiches ou liens).
+  - type: textarea
+    id: media
+    attributes:
+      label: Images ou médias
+      description: Indiquez plutôt le lien d'origine, l'auteur.e et la licence. Ne joignez pas de photo de personne identifiable. Les images envoyées ici sont hébergées par GitHub et visibles publiquement.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Vérifications
+      options:
+        - label: Je n'ai inclus aucune donnée personnelle ni information sensible (noms, lieux, contacts).
+          required: true
+        - label: J'ai indiqué mes sources.
+          required: true
+        - label: Je comprends que la fiche sera relue avant publication et peut être modifiée.
+          required: true

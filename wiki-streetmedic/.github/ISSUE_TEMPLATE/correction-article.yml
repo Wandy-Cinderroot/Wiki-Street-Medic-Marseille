@@ -1,0 +1,66 @@
+name: Corriger ou compléter un article
+description: Signaler une erreur, une information périmée, une source manquante ou proposer un ajout
+title: "[fix] "
+labels: ["correction", "to-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de contribuer. Ce formulaire est public: n'indiquez aucune donnée personnelle.
+        Les corrections touchant aux soins et aux blessures sont relues en priorité.
+  - type: input
+    id: page
+    attributes:
+      label: Page concernée
+      description: Lien de la page ou titre exact.
+      placeholder: https://.../munitions/genl/
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section concernée
+      description: Titre de la section, si connu.
+      placeholder: Blessures
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: Nature du problème
+      options:
+        - factual-error
+        - outdated-information
+        - missing-information
+        - missing-source
+        - medical-safety
+        - typo-or-wording
+        - broken-link-or-image
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Texte actuel
+      description: Copiez le passage concerné.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Correction proposée
+      description: Ce qu'il faudrait écrire à la place, ou ce qu'il faut ajouter.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Obligatoire pour une correction de fait ou de contenu médical. Liens, titres, dates de consultation.
+      placeholder: "- Nom de la source, lien, consulté le AAAA-MM-JJ"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Vérifications
+      options:
+        - label: Je n'ai inclus aucune donnée personnelle ni information sensible.
+          required: true
+        - label: Je comprends que la correction sera relue avant publication.
+          required: true

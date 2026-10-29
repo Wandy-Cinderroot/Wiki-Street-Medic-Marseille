@@ -1,0 +1,26 @@
+---
+title: {{ title | tojson }}
+description: {{ description | tojson }}
+tags:
+{% for tag in tags %}
+  - {{ tag | tojson }}
+{% endfor %}
+---
+
+# {{ title }}
+{% if image %}
+<figure class="thumb" markdown="span">
+  ![{{ image_description | default(nom) }}]({{ image }})
+  <figcaption>{{ image_legende | default("") }}</figcaption>
+</figure>
+{% endif %}
+{{resume}}
+
+## Sources
+{% for source in sources %}
+- [{{ source.titre }}]({{ source.url }})
+{% endfor %}
+
+## Révision
+- **Statut :** {{ statut }}
+- **Dernière vérification :** {{ derniere_verification }}

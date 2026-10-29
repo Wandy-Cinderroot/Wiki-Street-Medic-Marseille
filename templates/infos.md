@@ -1,0 +1,127 @@
+# Général 
+- Résumé
+	- ID: `nom-complet`, Type: Texte, Obligatoire: Oui, Description: Nom complet de l'objet documenté.
+	- ID: `nom-courant`, Type: Texte, Obligatoire: Non, Description: Nom courant ou appellation usuelle.
+	- ID: `description`, Type: Markdown, Obligatoire: Oui, Description: Présentation générale de l'objet.
+	- ID: `thumbnail`, Type: Image, Obligatoire: Non, Description: Image miniature affichée sur la page et dans les index.
+- Documentation
+	- ID: `sources`, Type: Liste de sources, Obligatoire: Non, Description: Références documentaires justifiant les informations de la fiche.
+	- ID: `statut-verification`, Type: Liste, Obligatoire: Oui, Description: État de vérification : non vérifié, partiellement vérifié ou vérifié.
+	- ID: `date-verification`, Type: Date, Obligatoire: Non, Description: Date de dernière vérification de la fiche.
+
+# Unités de police
+- Résumé
+	- ID: `nom-complet`, Type: Texte, Obligatoire: Oui, Description: Nom complet de l'objet documenté.
+	- ID: `nom-courant`, Type: Texte, Obligatoire: Non, Description: Nom courant ou appellation usuelle.
+	- ID: `description`, Type: Markdown, Obligatoire: Oui, Description: Présentation générale de l'objet.
+	- ID: `thumbnail`, Type: Image, Obligatoire: Non, Description: Image miniature affichée sur la page et dans les index.
+- Détails techniques
+	- Organisation
+		- ID: `type-unite`, Type: Liste, Obligatoire: Oui, Description: Catégorie de l'unité ou du service.
+		- ID: `service-rattachement`, Type: Texte, Obligatoire: Oui, Description: Direction ou service de rattachement.
+- Documentation
+	- ID: `sources`, Type: Liste de sources, Obligatoire: Non, Description: Références documentaires justifiant les informations de la fiche.
+	- ID: `statut-verification`, Type: Liste, Obligatoire: Oui, Description: État de vérification : non vérifié, partiellement vérifié ou vérifié.
+	- ID: `date-verification`, Type: Date, Obligatoire: Non, Description: Date de dernière vérification de la fiche.
+# Armes de contact
+- Résumé
+	- ID: `nom-complet`, Type: Texte, Obligatoire: Oui, Description: Nom complet de l'objet documenté.
+	- ID: `nom-courant`, Type: Texte, Obligatoire: Non, Description: Nom courant ou appellation usuelle.
+	- ID: `description`, Type: Markdown, Obligatoire: Oui, Description: Présentation générale de l'objet.
+	- ID: `thumbnail`, Type: Image, Obligatoire: Non, Description: Image miniature affichée sur la page et dans les index.
+- Détails techniques
+	- Classification
+		- ID: `famille`, Type: Liste, Obligatoire: Oui, Description: Catégorie de l'équipement : bâton, tonfa, bouclier, aérosol irritant, autre.
+		- ID: `fabricant`, Type: Texte, Obligatoire: Non, Description: Fabricant connu.
+		- ID: `modele`, Type: Texte, Obligatoire: Non, Description: Modèle ou référence commerciale.
+		- ID: `dimensions`, Type: Texte, Obligatoire: Non, Description: Dimensions et masse documentées.
+		- ID: `composition`, Type: Markdown, Obligatoire: Non, Description: Matériaux et composants connus.
+	- Usage
+		- ID: `fonction-officielle`, Type: Markdown, Obligatoire: Oui, Description: Fonction annoncée ou prévue par le fabricant ou les autorités.
+		- ID: `utilisation-reelle`, Type: Markdown, Obligatoire: Non, Description: Utilisations observées et documentées.
+		- ID: `unites-utilisatrices`, Type: Relations multiples, Obligatoire: Non, Description: Unités utilisant cet équipement, lorsque cela est documenté.
+- Blessures
+	- ID: `effets`, Type: Markdown, Obligatoire: Oui, Description: Effets physiques ou chimiques possibles et effets constatés dans les sources.
+	- ID: `types-de-blessures`, Type: Relations multiples, Obligatoire: Non, Description: Fiches décrivant les blessures associées.
+	- ID: `images-de-blessures`, Type: Galerie de médias, Obligatoire: Non, Description: Images médicales ou documentaires, avec source et avertissement de contenu si nécessaire.
+- Documentation
+	- ID: `sources`, Type: Liste de sources, Obligatoire: Non, Description: Références documentaires justifiant les informations de la fiche.
+	- ID: `statut-verification`, Type: Liste, Obligatoire: Oui, Description: État de vérification : non vérifié, partiellement vérifié ou vérifié.
+	- ID: `date-verification`, Type: Date, Obligatoire: Non, Description: Date de dernière vérification de la fiche.
+
+# Munitions
+- Résumé
+	- ID: `nom-complet`, Type: Texte, Obligatoire: Oui, Description: Nom complet de l'objet documenté.
+	- ID: `nom-courant`, Type: Texte, Obligatoire: Non, Description: Nom courant ou appellation usuelle.
+	- ID: `description`, Type: Markdown, Obligatoire: Oui, Description: Présentation générale de l'objet.
+	- ID: `thumbnail`, Type: Image, Obligatoire: Non, Description: Image miniature affichée sur la page et dans les index.
+- Détails techniques
+	- Classification
+		- ID: `famille`, Type: Liste, Obligatoire: Oui, Description: Catégorie de l'équipement : bâton, tonfa, bouclier, aérosol irritant, autre.
+		- ID: `calibre`, Type: Texte, Obligatoire: Non, Description: Calibre ou désignation dimensionnelle documentée.
+		- ID: `fabricant`, Type: Texte, Obligatoire: Non, Description: Fabricant connu.
+		- ID: `modele`, Type: Texte, Obligatoire: Non, Description: Modèle ou référence commerciale.
+		- ID: `dimensions`, Type: Texte, Obligatoire: Non, Description: Dimensions et masse documentées.
+		- ID: `composition`, Type: Markdown, Obligatoire: Non, Description: Matériaux et composants connus.
+		-  ID: `lanceurs-compatibles`, Type: Relations multiples, Obligatoire: Non, Description: Lanceurs dont la compatibilité est documentée.
+	- Usage
+		- ID: `fonction-officielle`, Type: Markdown, Obligatoire: Oui, Description: Fonction annoncée ou prévue par le fabricant ou les autorités.
+		- ID: `utilisation-reelle`, Type: Markdown, Obligatoire: Non, Description: Utilisations observées et documentées.
+		- ID: `portee-annoncee`, Type: Texte, Obligatoire: Non, Description: Portée annoncée, avec unité, contexte et source.
+- Blessures
+	- ID: `effets`, Type: Markdown, Obligatoire: Oui, Description: Effets physiques ou chimiques possibles et effets constatés dans les sources.
+	- ID: `types-de-blessures`, Type: Relations multiples, Obligatoire: Non, Description: Fiches décrivant les blessures associées.
+	- ID: `images-de-blessures`, Type: Galerie de médias, Obligatoire: Non, Description: Images médicales ou documentaires, avec source et avertissement de contenu si nécessaire.
+- Documentation
+	- ID: `sources`, Type: Liste de sources, Obligatoire: Non, Description: Références documentaires justifiant les informations de la fiche.
+	- ID: `statut-verification`, Type: Liste, Obligatoire: Oui, Description: État de vérification : non vérifié, partiellement vérifié ou vérifié.
+	- ID: `date-verification`, Type: Date, Obligatoire: Non, Description: Date de dernière vérification de la fiche.
+
+# Lanceurs
+- Résumé
+	- ID: `nom-complet`, Type: Texte, Obligatoire: Oui, Description: Nom complet de l'objet documenté.
+	- ID: `nom-courant`, Type: Texte, Obligatoire: Non, Description: Nom courant ou appellation usuelle.
+	- ID: `description`, Type: Markdown, Obligatoire: Oui, Description: Présentation générale de l'objet.
+	- ID: `thumbnail`, Type: Image, Obligatoire: Non, Description: Image miniature affichée sur la page et dans les index.
+- Détails techniques
+	- Classification
+		- ID: `famille`, Type: Liste, Obligatoire: Oui, Description: Catégorie de l'équipement : bâton, tonfa, bouclier, aérosol irritant, autre.
+		- ID: `calibre`, Type: Texte, Obligatoire: Non, Description: Calibre ou désignation dimensionnelle documentée.
+		- ID: `fabricant`, Type: Texte, Obligatoire: Non, Description: Fabricant connu.
+		- ID: `modele`, Type: Texte, Obligatoire: Non, Description: Modèle ou référence commerciale.
+		- ID: `dimensions`, Type: Texte, Obligatoire: Non, Description: Dimensions et masse documentées.
+		- ID: `capacite`, Type: Texte, Obligatoire: Non, Description: Capacité documentée, avec unité.
+	- Usage
+		- ID: `fonction-officielle`, Type: Markdown, Obligatoire: Oui, Description: Fonction annoncée ou prévue par le fabricant ou les autorités.
+		- ID: `utilisation-reelle`, Type: Markdown, Obligatoire: Non, Description: Utilisations observées et documentées.
+		- ID: `munitions-compatibles`, Type: Relations multiples, Obligatoire: Non, Description: Munitions compatibles confirmées par des sources.
+- Blessures
+	- ID: `effets`, Type: Markdown, Obligatoire: Oui, Description: Effets physiques ou chimiques possibles et effets constatés dans les sources.
+	- ID: `types-de-blessures`, Type: Relations multiples, Obligatoire: Non, Description: Fiches décrivant les blessures associées.
+	- ID: `images-de-blessures`, Type: Galerie de médias, Obligatoire: Non, Description: Images médicales ou documentaires, avec source et avertissement de contenu si nécessaire.
+- Documentation
+	- ID: `sources`, Type: Liste de sources, Obligatoire: Non, Description: Références documentaires justifiant les informations de la fiche.
+	- ID: `statut-verification`, Type: Liste, Obligatoire: Oui, Description: État de vérification : non vérifié, partiellement vérifié ou vérifié.
+	- ID: `date-verification`, Type: Date, Obligatoire: Non, Description: Date de dernière vérification de la fiche.
+
+# Véhicules
+
+- Résumé
+	- ID: `nom-complet`, Type: Texte, Obligatoire: Oui, Description: Nom complet de l'objet documenté.
+	- ID: `nom-courant`, Type: Texte, Obligatoire: Non, Description: Nom courant ou appellation usuelle.
+	- ID: `description`, Type: Markdown, Obligatoire: Oui, Description: Présentation générale de l'objet.
+	- ID: `thumbnail`, Type: Image, Obligatoire: Non, Description: Image miniature affichée sur la page et dans les index.
+- Détails techniques
+	- Classification
+		- ID: `categorie`, Type: Liste, Obligatoire: Oui, Description: Catégorie de véhicule : transport, maintien de l'ordre, intervention spécialisée, autre.
+		- ID: `fabricant`, Type: Texte, Obligatoire: Non, Description: Fabricant connu.
+		- ID: `dimensions`, Type: Texte, Obligatoire: Non, Description: Dimensions et masse documentées.
+		- ID: `capacite`, Type: Texte, Obligatoire: Non, Description: Capacité documentée, avec unité.
+	- Usage
+		- ID: `fonction-officielle`, Type: Markdown, Obligatoire: Oui, Description: Fonction annoncée ou prévue par le fabricant ou les autorités.
+		- ID: `utilisation-reelle`, Type: Markdown, Obligatoire: Non, Description: Utilisations observées et documentées.
+		- ID: `munitions-compatibles`, Type: Relations multiples, Obligatoire: Non, Description: Munitions compatibles confirmées par des sources.
+- Documentation
+	- ID: `sources`, Type: Liste de sources, Obligatoire: Non, Description: Références documentaires justifiant les informations de la fiche.
+	- ID: `statut-verification`, Type: Liste, Obligatoire: Oui, Description: État de vérification : non vérifié, partiellement vérifié ou vérifié.
+	- ID: `date-verification`, Type: Date, Obligatoire: Non, Description: Date de dernière vérification de la fiche.

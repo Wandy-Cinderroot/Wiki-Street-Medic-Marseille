@@ -1,0 +1,9 @@
+# Relecture obligatoire. Remplacer @ORGA/... par des équipes ou personnes réelles
+# (une équipe inexistante invalide la règle). Activer "Require review from Code Owners"
+# dans la protection de la branche main.
+/contenu/soigner/ @ORGA/relecture-medicale
+/contenu/proteger/ @ORGA/relecture-medicale
+/contenu/reconnaitre/ @ORGA/relecture
+/.github/ @ORGA/mainteneurs
+/outils/ @ORGA/mainteneurs
+/zensical.toml @ORGA/mainteneurs

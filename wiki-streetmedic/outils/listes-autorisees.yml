@@ -1,0 +1,32 @@
+# Valeurs autorisées dans le frontmatter (clés et valeurs en anglais).
+# Ajouter une valeur ici avant de l'utiliser dans une page.
+type:
+  - page
+  - hub
+  - weapon-contact
+  - munition
+  - launcher
+  - tactical
+  - vehicle
+  - unit
+  - situation
+  - care
+  - ppe
+  - checklist
+  - procedure
+  - learning
+  - source
+status: [draft, reviewed, validated]
+tags:
+  - vector/hand
+  - vector/launcher
+  - vector/vehicle
+  - effect/kinetic
+  - effect/chemical
+  - effect/blast
+  - effect/light
+  - effect/water
+  - source/militant
+  - source/official
+  - source/medical
+body_area: [eyes, respiratory, hearing, head, body, feet, marking, kit]

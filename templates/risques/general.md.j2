@@ -1,0 +1,69 @@
+---
+title: {{ title | tojson }}
+description: {{ description | tojson }}
+tags:
+{% for tag in tags %}
+  - {{ tag | tojson }}
+{% endfor %}
+---
+
+# {{ title }}
+
+{% if image %}
+<figure class="thumb" markdown="span">
+  ![{{ image_description | default(nom) }}]({{ image }})
+  <figcaption>{{ image_legende | default("") }}</figcaption>
+</figure>
+{% endif %}
+
+!!! danger "Description"
+    {{ description_breve | indent(4) }}
+
+!!! warning "Protection"
+    {{ protection | indent(4) }}
+
+!!! injury "Blessures"
+    {{ blessures_resume | indent(4) }}
+
+## Détails techniques
+
+### Description
+
+{{ description_detaillee }}
+
+### Usage légal
+
+{{ usage_legal }}
+
+### Usage réel documenté
+
+{{ usage_reel }}
+
+## Blessures associées
+
+### Type de blessure
+
+{{ type_blessure }}
+
+#### Comment la reconnaître
+
+{{ reconnaissance_blessure }}
+
+#### Images et documentation (TW)
+
+{% if documentation_blessures %}
+{{ documentation_blessures }}
+{% else %}
+_Aucune documentation renseignée._
+{% endif %}
+
+## Sources
+
+{% for source in sources %}
+- [{{ source.titre }}]({{ source.url }})
+{% endfor %}
+
+## Révision
+
+- **Statut :** {{ statut }}
+- **Dernière vérification :** {{ derniere_verification }}

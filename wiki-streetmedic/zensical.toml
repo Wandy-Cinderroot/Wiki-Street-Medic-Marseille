@@ -1,0 +1,37 @@
+[project]
+site_name = "Wiki Street Medic Marseille"
+site_description = "Savoirs de terrain: reconnaître, se protéger, soigner, s'organiser."
+site_url = "https://ORGA.github.io/wiki-streetmedic/"
+docs_dir = "_genere/docs"
+site_dir = "site"
+use_directory_urls = true
+repo_url = "https://github.com/ORGA/wiki-streetmedic"
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+language = "fr"
+features = [
+  "navigation.instant",
+  "navigation.tabs",
+  "navigation.indexes",
+  "navigation.top",
+  "search.suggest",
+  "toc.follow",
+]
+
+[project.plugins.tags]
+tags_hierarchy = true
+
+[project.plugins.glightbox]
+
+[project.plugins.awesome-nav]
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+footnotes = {}
+md_in_html = {}
+tables = {}
+pymdownx.details = {}
+pymdownx.superfences = {}
+toc.permalink = true

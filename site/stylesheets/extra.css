@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Black Flag palette */
+:root {
+  --md-primary-fg-color: #111111;
+  --md-primary-fg-color--dark: #080808;
+  --md-primary-fg-color--light: #292929;
+
+  --md-accent-fg-color: #D92332;
+
+  --md-default-bg-color: #F5F2EB;
+  --md-default-fg-color: #202020;
+
+  --md-typeset-a-color: #087DB5;
+}
+
+/* Site name */
+.md-header__topic,
+.md-header__topic .md-ellipsis {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+}
+
+/* Blue links, red on hover */
+.md-content a:hover {
+  color: #D92332;
+}

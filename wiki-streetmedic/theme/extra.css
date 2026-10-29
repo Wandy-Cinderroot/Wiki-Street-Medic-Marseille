@@ -1,0 +1,9 @@
+/* Légende sous une image: écrire la ligne en italique juste après l'image */
+.md-typeset img + em { display: block; text-align: center; font-size: 0.8rem; margin-top: 0.3rem; }
+.md-typeset img { max-width: 100%; height: auto; }
+/* Lien "Modifier cette page" */
+.md-typeset a.edit-link { font-size: 0.8rem; }
+/* Polices (optionnel): déposer les fichiers dans theme/fonts/ puis décommenter
+@font-face { font-family: "TitreGrunge"; src: url("../fonts/titre.woff2") format("woff2"); font-display: swap; }
+.md-typeset h1, .md-typeset h2 { font-family: "TitreGrunge", sans-serif; }
+*/
