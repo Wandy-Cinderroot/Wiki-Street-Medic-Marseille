@@ -28,66 +28,48 @@
   color: #D92332;
 }
 
-.md-typeset .admonition.vignette {
+/* Vignette*/
+.md-typeset .infobox {
   float: right;
+  box-sizing: border-box;
   width: 45%;
   max-width: 14rem;
   margin: 0 0 .8em .8em;
-  padding: 0;
-  border: 2px solid var(--md-default-fg-color--light, #888);
-  border-radius: 0;
-  box-shadow: none;
+  border: 2px solid rgba(128, 128, 128, .7);
+  border-radius: .6rem;
+  overflow: hidden;
+  background: rgba(128, 128, 128, .1);
   font-size: .8rem;
   text-align: center;
 }
-.md-typeset .admonition.vignette > .admonition-title {
+.md-typeset .infobox p {
   margin: 0;
   padding: .4em .5em;
-  background: transparent;
+}
+.md-typeset .infobox p:nth-of-type(2) {
   font-weight: bold;
-  border-bottom: 2px solid var(--md-default-fg-color--light, #888);
+  border-top: 2px solid rgba(128, 128, 128, .7);
 }
-.md-typeset .admonition.vignette > .admonition-title::before {
-  display: none;
-}
-.md-typeset .admonition.vignette p {
-  margin: 0;
-  padding: .4em .5em;
-}
-.md-typeset .admonition.vignette img {
+.md-typeset .infobox img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
-.md-typeset .admonition.vignette ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.md-typeset .infobox ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-inline: 0 !important;
+  padding-inline: 0 !important;
 }
-.md-typeset .admonition.vignette li {
-  margin: 0;
-  padding: .4em .5em;
-  border-top: 1px solid var(--md-default-fg-color--lightest, #ccc);
+.md-typeset .infobox li {
+  margin: 0 !important;
+  padding: .4em .5em !important;
+  margin-inline: 0 !important;
+  border-top: 1px solid rgba(128, 128, 128, .4);
 }
 .md-typeset h1,
 .md-typeset h2 {
   clear: both;
-}
-.md-typeset .admonition.vignette,
-.md-typeset details.vignette {
-  float: right !important;
-  width: 30% !important;
-  max-width: 14rem !important;
-  margin: 0 0 .8em .8em !important;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 44.9375em) {
-  .md-typeset .admonition.vignette,
-  .md-typeset details.vignette {
-    float: right !important;
-    width: 30% !important;
-    max-width: 14rem !important;
-    margin: 0 0 .8em .8em !important;
-  }
 }

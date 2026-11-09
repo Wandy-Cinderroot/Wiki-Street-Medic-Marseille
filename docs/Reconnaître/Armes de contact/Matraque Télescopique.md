@@ -1,7 +1,14 @@
-!!! vignette ""
-    ![Matraque télescopique déployée](../../assets/images/logo.svg)
 
-    **Matraque télescopique**
+<div class="infobox" markdown>
 
-    * Info 1
-    * Info 2
+![Matraque télescopique déployée, vue de profil](../../assets/images/logo.svg)
+
+**Matraque télescopique**
+
+* Info 1
+* Info 2
+* Info 3
+
+</div>
+
+Résumé en une phrase de la page.
