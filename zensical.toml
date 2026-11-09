@@ -28,6 +28,8 @@ nav = [
         ] },
         { "Armes de contact" = [
             "Reconnaître/Armes de contact/index.md",
+            "Reconnaître/Armes de contact/Matraque Télescopique.md",
+
         ] },
         { "Munitions" = [
             "Reconnaître/Munitions/index.md",
