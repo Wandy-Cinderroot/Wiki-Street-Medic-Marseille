@@ -28,21 +28,49 @@
   color: #D92332;
 }
 
-@media screen and (max-width: 29.9375em) {
-  .md-typeset .admonition.inline.end {
-    float: right;
-    width: 45%;
-    max-width: 12rem;
-    margin: 0 0 .8em .8em;
-  }
-  .md-typeset .admonition.inline:not(.end) {
-    float: left;
-    width: 45%;
-    max-width: 12rem;
-    margin: 0 .8em .8em 0;
-  }
-  .md-typeset h1,
-  .md-typeset h2 {
-    clear: both;
-  }
+.md-typeset .admonition.vignette {
+  float: right;
+  width: 45%;
+  max-width: 14rem;
+  margin: 0 0 .8em .8em;
+  padding: 0;
+  border: 2px solid var(--md-default-fg-color--light, #888);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: .8rem;
+  text-align: center;
+}
+.md-typeset .admonition.vignette > .admonition-title {
+  margin: 0;
+  padding: .4em .5em;
+  background: transparent;
+  font-weight: bold;
+  border-bottom: 2px solid var(--md-default-fg-color--light, #888);
+}
+.md-typeset .admonition.vignette > .admonition-title::before {
+  display: none;
+}
+.md-typeset .admonition.vignette p {
+  margin: 0;
+  padding: .4em .5em;
+}
+.md-typeset .admonition.vignette img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.md-typeset .admonition.vignette ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.md-typeset .admonition.vignette li {
+  margin: 0;
+  padding: .4em .5em;
+  border-top: 1px solid var(--md-default-fg-color--lightest, #ccc);
+}
+.md-typeset h1,
+.md-typeset h2 {
+  clear: both;
 }
