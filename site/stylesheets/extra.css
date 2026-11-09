@@ -74,3 +74,20 @@
 .md-typeset h2 {
   clear: both;
 }
+.md-typeset .admonition.vignette,
+.md-typeset details.vignette {
+  float: right !important;
+  width: 45% !important;
+  max-width: 14rem !important;
+  margin: 0 0 .8em .8em !important;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .admonition.vignette,
+  .md-typeset details.vignette {
+    float: right !important;
+    width: 45% !important;
+    max-width: 14rem !important;
+    margin: 0 0 .8em .8em !important;
+  }
+}
