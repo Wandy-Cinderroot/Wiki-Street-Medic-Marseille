@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+
 /* Black Flag palette */
 :root {
   --md-primary-fg-color: #111111;
@@ -25,4 +26,23 @@
 /* Blue links, red on hover */
 .md-content a:hover {
   color: #D92332;
+}
+
+@media screen and (max-width: 29.9375em) {
+  .md-typeset .admonition.inline.end {
+    float: right;
+    width: 45%;
+    max-width: 12rem;
+    margin: 0 0 .8em .8em;
+  }
+  .md-typeset .admonition.inline:not(.end) {
+    float: left;
+    width: 45%;
+    max-width: 12rem;
+    margin: 0 .8em .8em 0;
+  }
+  .md-typeset h1,
+  .md-typeset h2 {
+    clear: both;
+  }
 }
