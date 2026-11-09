@@ -77,7 +77,7 @@
 .md-typeset .admonition.vignette,
 .md-typeset details.vignette {
   float: right !important;
-  width: 45% !important;
+  width: 30% !important;
   max-width: 14rem !important;
   margin: 0 0 .8em .8em !important;
   box-sizing: border-box;
@@ -86,7 +86,7 @@
   .md-typeset .admonition.vignette,
   .md-typeset details.vignette {
     float: right !important;
-    width: 45% !important;
+    width: 30% !important;
     max-width: 14rem !important;
     margin: 0 0 .8em .8em !important;
   }
