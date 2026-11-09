@@ -5,5 +5,5 @@ status: draft
 ---
 # Contenu
 - [Glossaire](glossaire.md)
-- [Sources](sources/index.md)
+- [Sources](Street%20Medic%20Marseille/Wiki-Street-Medic-Marseille/wiki-streetmedic/contenu/ressources/index.md)
 - [Étiquettes](etiquettes.md)

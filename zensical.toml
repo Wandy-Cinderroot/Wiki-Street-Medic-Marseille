@@ -12,10 +12,15 @@ site_name = "Street Medic Marseille"
 
 
 nav = [
-    { "Soigner" = [
-        "Soigner/index.md",
+    { "Démarrer" = [
+        "Démarrer/index.md",
+        { "Parcours" = [
+            "Démarrer/Parcours/index.md",
+        ] },
+        { "Mode d'emploi" = [
+            "Démarrer/Mode d'emploi/index.md",
+        ] },
     ] },
-
     { "Reconnaître" = [
         "Reconnaître/index.md",
         { "Unités" = [
@@ -34,25 +39,68 @@ nav = [
             "Reconnaître/Véhicules/index.md",
         ] },
     ] },
-
-    { "Se protéger" = [
-        "Se protéger/index.md",
+    { "S'équiper" = [
+        "S'équiper/index.md",
+        { "Yeux" = [
+            "S'équiper/Yeux/index.md",
+        ] },
+        { "Respiration" = [
+            "S'équiper/Respiration/index.md",
+        ] },
+        { "Oreilles" = [
+            "S'équiper/Oreilles/index.md",
+        ] },
+        { "Chocs" = [
+            "S'équiper/Chocs/index.md",
+        ] },
+        { "Tenue" = [
+            "S'équiper/Tenue/index.md",
+        ] },
+        { "Repérage" = [
+            "S'équiper/Repérage/index.md",
+        ] },
+        { "Trousse" = [
+            "S'équiper/Trousse/index.md",
+        ] },
     ] },
-
-    { "S'organiser" = [
-        "S'organiser/index.md",
+    { "Secourir" = [
+        "Secourir/index.md",
     ] },
-
-    { "Se former" = [
-        "Se former/index.md",
+    { "Agir" = [
+        "Agir/index.md",
+        { "Avant" = [
+            "Agir/Avant/index.md",
+        ] },
+        { "Pendant" = [
+            "Agir/Pendant/index.md",
+        ] },
+        { "Après" = [
+            "Agir/Après/index.md",
+        ] },
     ] },
-
     { "Ressources" = [
         "Ressources/index.md",
+        { "Fiches" = [
+            "Ressources/Fiches/index.md",
+        ] },
+        { "Glossaire" = [
+            "Ressources/Glossaire/index.md",
+        ] },
+        { "Sources" = [
+            "Ressources/Sources/index.md",
+        ] },
     ] },
-
     { "Collectifs" = [
         "Collectifs/index.md",
+        { "Valeurs" = [
+            "Collectifs/Valeurs/index.md",
+        ] },
+        { "Fonctionnement" = [
+            "Collectifs/Fonctionnement/index.md",
+        ] },
+        { "Contribuer" = [
+            "Collectifs/Contribuer/index.md",
+        ] },
     ] },
 ]
 
