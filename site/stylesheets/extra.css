@@ -29,10 +29,60 @@
 }
 
 /* Vignette*/
+.md-typeset .vignette {
+  float: right;
+  box-sizing: border-box;
+  width: 30%;
+  max-width: 14rem;
+  margin: 0 0 .8em .8em;
+  border: 2px solid rgba(128, 128, 128, .7);
+  border-radius: .6rem;
+  overflow: hidden;
+  background: rgba(128, 128, 128, .1);
+  font-size: .8rem;
+  text-align: center;
+}
+.md-typeset .vignette p {
+  margin: 0;
+  padding: .4em .5em;
+}
+.md-typeset .vignette p:nth-of-type(2) {
+  font-weight: bold;
+  border-top: 2px solid rgba(128, 128, 128, .7);
+}
+.md-typeset .vignette img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.md-typeset .vignette ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-inline: 0 !important;
+  padding-inline: 0 !important;
+}
+.md-typeset .vignette li {
+  margin: 0 !important;
+  padding: .4em .5em !important;
+  margin-inline: 0 !important;
+  border-top: 1px solid rgba(128, 128, 128, .4);
+}
+.md-typeset h1,
+.md-typeset h2 {
+  clear: both;
+}
+.md-typeset .admonition,
+.md-typeset details {
+  clear: both;
+}
+
+/* infobox*/
 .md-typeset .infobox {
   float: right;
   box-sizing: border-box;
-  width: 45%;
+  width: 30%;
   max-width: 14rem;
   margin: 0 0 .8em .8em;
   border: 2px solid rgba(128, 128, 128, .7);
@@ -71,5 +121,10 @@
 }
 .md-typeset h1,
 .md-typeset h2 {
+  clear: both;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
   clear: both;
 }

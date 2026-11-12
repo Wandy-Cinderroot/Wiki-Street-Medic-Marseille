@@ -13,95 +13,101 @@ site_name = "Street Medic Marseille"
 
 nav = [
     { "Démarrer" = [
-        "Démarrer/index.md",
+        "0-demarrer/index.md",
         { "Parcours" = [
-            "Démarrer/Parcours/index.md",
+            "0-demarrer/1-parcours/index.md",
         ] },
         { "Mode d'emploi" = [
-            "Démarrer/Mode d'emploi/index.md",
+            "0-demarrer/2-mode-d-emploi/index.md",
         ] },
     ] },
     { "Reconnaître" = [
-        "Reconnaître/index.md",
+        "1-reconnaitre/index.md",
         { "Unités" = [
-            "Reconnaître/Unités/index.md",
+            "1-reconnaitre/1-unites/index.md",
         ] },
         { "Armes de contact" = [
-            "Reconnaître/Armes de contact/index.md",
-            "Reconnaître/Armes de contact/Matraque Télescopique.md",
-
+            "1-reconnaitre/2-armes-de-contact/index.md",
+            "1-reconnaitre/2-armes-de-contact/1-matraque-telescopique.md",
         ] },
         { "Munitions" = [
-            "Reconnaître/Munitions/index.md",
+            "1-reconnaitre/3-munitions/index.md",
         ] },
         { "Lanceurs" = [
-            "Reconnaître/Lanceurs/index.md",
+            "1-reconnaitre/4-lanceurs/index.md",
         ] },
         { "Véhicules" = [
-            "Reconnaître/Véhicules/index.md",
+            "1-reconnaitre/5-vehicules/index.md",
         ] },
     ] },
     { "S'équiper" = [
-        "S'équiper/index.md",
+        "2-s-equiper/index.md",
         { "Yeux" = [
-            "S'équiper/Yeux/index.md",
+            "2-s-equiper/1-yeux/index.md",
         ] },
         { "Respiration" = [
-            "S'équiper/Respiration/index.md",
+            "2-s-equiper/2-respiration/index.md",
         ] },
         { "Oreilles" = [
-            "S'équiper/Oreilles/index.md",
+            "2-s-equiper/3-oreilles/index.md",
         ] },
         { "Chocs" = [
-            "S'équiper/Chocs/index.md",
+            "2-s-equiper/4-chocs/index.md",
         ] },
         { "Tenue" = [
-            "S'équiper/Tenue/index.md",
+            "2-s-equiper/5-tenue/index.md",
         ] },
         { "Repérage" = [
-            "S'équiper/Repérage/index.md",
+            "2-s-equiper/6-reperage/index.md",
         ] },
         { "Trousse" = [
-            "S'équiper/Trousse/index.md",
+            "2-s-equiper/7-trousse/index.md",
         ] },
     ] },
     { "Secourir" = [
-        "Secourir/index.md",
+        "3-secourir/index.md",
     ] },
     { "Agir" = [
-        "Agir/index.md",
+        "4-agir/index.md",
         { "Avant" = [
-            "Agir/Avant/index.md",
+            "4-agir/1-avant/index.md",
         ] },
         { "Pendant" = [
-            "Agir/Pendant/index.md",
+            "4-agir/2-pendant/index.md",
         ] },
         { "Après" = [
-            "Agir/Après/index.md",
+            "4-agir/3-apres/index.md",
         ] },
     ] },
     { "Ressources" = [
-        "Ressources/index.md",
+        "5-ressources/index.md",
         { "Fiches" = [
-            "Ressources/Fiches/index.md",
+            "5-ressources/1-fiches/index.md",
         ] },
         { "Glossaire" = [
-            "Ressources/Glossaire/index.md",
+            "5-ressources/2-glossaire/index.md",
         ] },
         { "Sources" = [
-            "Ressources/Sources/index.md",
+            "5-ressources/3-sources/index.md",
         ] },
     ] },
     { "Collectifs" = [
-        "Collectifs/index.md",
+        "6-collectifs/index.md",
         { "Valeurs" = [
-            "Collectifs/Valeurs/index.md",
+            "6-collectifs/1-valeurs/index.md",
         ] },
         { "Fonctionnement" = [
-            "Collectifs/Fonctionnement/index.md",
+            "6-collectifs/2-fonctionnement/index.md",
         ] },
         { "Contribuer" = [
-            "Collectifs/Contribuer/index.md",
+            "6-collectifs/3-contribuer/index.md",
+            { "Templates" = [
+            "6-collectifs/3-contribuer/1-templates/1-1_reconnaitre_unite.md",
+            "6-collectifs/3-contribuer/1-templates/1-2_reconnaitre_arme-de-contact.md",
+            "6-collectifs/3-contribuer/1-templates/1-3_reconnaitre_munition.md",
+            "6-collectifs/3-contribuer/1-templates/1-4_reconnaitre_lanceur.md",
+            "6-collectifs/3-contribuer/1-templates/1-5_reconnaitre_vehicule.md",
+            ] },
         ] },
     ] },
 ]

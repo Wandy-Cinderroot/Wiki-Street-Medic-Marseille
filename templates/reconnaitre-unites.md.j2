@@ -1,0 +1,26 @@
+---
+title: "{{ item.name }}"
+description: "{{ item.description }}"
+tags:
+  - "{{ item.category }}"
+---
+
+# {{ item.name }}
+
+
+<div class="infobox" markdown>
+![vignette {{ item.name }}]({{ item.vignette.image }})
+**{{ item.name }}**
+</div>
+
+{{ item.description }}
+
+
+## Caractéristiques
+
+- Fabricant : {{ item.manufacturer }}
+- Catégorie : {{ item.category }}
+
+## Description
+
+{{ item.content }}

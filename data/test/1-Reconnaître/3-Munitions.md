@@ -1,0 +1,27 @@
+- Identification
+	- Nom: Texte (une ligne)
+	- Slug: Texte (une ligne)
+	- Autres noms: Texte long
+	- Résumé: Texte long
+	- Image de vignette: Fichier
+- Utilisation
+	- Cadre d'utilisation: Sélection multiple
+	- Unités utilisatrices: Sélection multiple
+	- Observations: Texte long
+- Risques et blessures
+	- Types de blessures possibles: Sélection multiple
+	- Zones corporelles exposées: Sélection multiple
+	- Précautions pour les street-medics: Texte long
+	- Images de blessures: Fichier
+- Détails technique
+	- Description: Texte long
+	- Fonctionnement: Texte long
+	- Calibre: Sélection multiple
+	- Lanceurs compatibles: Sélection multiple
+	- Matériaux: Sélection multiple
+	- Fabricant: Sélection multiple
+- Sources et validation
+	- Sources: Sélection multiple
+	- Date de dernière vérification: Date
+	- Statut: Liste déroulante
+	- Contributeur·ice: Liste déroulante

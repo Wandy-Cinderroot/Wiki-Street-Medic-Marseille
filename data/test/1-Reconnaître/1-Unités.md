@@ -1,0 +1,28 @@
+- Identification
+    - Nom: Texte (une ligne)
+    - Slug: Texte (une ligne)
+    - Autres noms: Texte long
+    - Résumé: Texte long
+    - Image de vignette: Fichier
+- Détails technique
+	- Description: Texte long
+	- Type d'unité: Sélection multiple
+		- Intervention
+		- Interpellation
+		- Maintien de l'ordre
+    - Autorité de rattachement: Liste déroulante
+	    - Police
+	    - Gendarmerie
+	    - DGSI
+	- Organisation: Texte long
+	- Fonctionnement: Texte long
+- Moyens et équipements
+    - Armes: Sélection multiple
+    - Véhicules: Sélection multiple
+- Sources et validation
+    - Sources: Sélection multiple
+    - Date de dernière vérification: Date
+    - Statut: Liste déroulante
+    - Contributeur·ice: Liste déroulante
+
+

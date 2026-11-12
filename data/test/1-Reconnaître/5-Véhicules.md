@@ -1,0 +1,21 @@
+- Identification    
+    - Nom: Texte (une ligne)
+    - Slug: Texte (une ligne)
+    - Autres noms: Texte long
+    - Résumé: Texte long
+    - Image de vignette: Fichier
+- Utilisation
+	- Cadre d'utilisation: Sélection multiple
+	- Unités utilisatrices: Sélection multiple
+	- Observations: Texte long
+- Détails techniques
+    - Description: Texte long
+    - Fonctionnement: Texte long
+    - Fabricant: Sélection multiple
+    - Type de véhicule: Liste déroulante
+    - Equipements: Liste déroulante
+- Sources et validation
+    - Sources: Sélection multiple
+    - Date de dernière vérification: Date
+    - Statut: Liste déroulante
+    - Contributeur·ice: Liste déroulante
